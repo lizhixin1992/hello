@@ -1,6 +1,7 @@
 from django.db import models
 # 设置对象结构（对应数据库的结构）
 class User(models.Model):
+    id = models.AutoField(primary_key=True)
     username = models.CharField(max_length=200)  # 字符串类型字段
     password = models.CharField(max_length=200,null=True)  # 字符串类型字段,null=True允许为空
     age = models.IntegerField(default=0)  # 整数类型字段

@@ -64,4 +64,5 @@ def detail(request,userid):
     # template = loader.get_template('app1/oneuser.html')  # 加载模板对象
     # return HttpResponse(template.render(dict1, request)) # 渲染视图
 
-
+def resultSuccessData():
+    result = {"errorCode":0, "errorMessage":"Success"}
